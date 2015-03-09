@@ -1,21 +1,24 @@
 <template name="sensorCollect">
-    <h2>Device Orientation</h2>
     <table>
         <tr>
             <td>Event Supported</td>
             <td id="doEvent"></td>
         </tr>
         <tr>
-            <td>Tilt Left/Right [gamma]</td>
-            <td id="doTiltLR">{{gamma}}</td>
+            <td>[x]</td>
+            <td id="doTiltLR">{{accelerometer.x}}</td>
         </tr>
         <tr>
-            <td>Tilt Front/Back [beta]</td>
-            <td id="doTiltFB">{{beta}}</td>
+            <td>[z]</td>
+            <td id="doTiltFB">{{accelerometer.z}}</td>
         </tr>
         <tr>
-            <td>Direction [alpha]</td>
-            <td id="doDirection">{{alpha}}</td>
+            <td>[y]</td>
+            <td id="doDirection">{{accelerometer.y}}</td>
         </tr>
     </table>
+    <hr/>
+    <div style="width: 200px;height: 200px;background: #000000;transform: perspective(600px) rotateY({{accelerometer.x}}deg) rotatex({{accelerometer.y}}deg) rotateZ({{accelerometer.z}}deg);">
+        <img src="/test.jpg" alt="" style="width: 100%;height: 100%;transform: perspective(100px) rotateZ(90deg)"/>
+    </div>
 </template>
