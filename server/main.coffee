@@ -1,7 +1,4 @@
-exports = this
-
-this.siteName = "MicroScope"
-
 Meteor.publish "posts",()->Posts.find()
+Meteor.publish "sensors",()->sensors.find()
 
 Meteor.startup
