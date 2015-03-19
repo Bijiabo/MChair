@@ -1,0 +1,16 @@
+<template name="sensorClient">
+    {{#if webkit}}
+    {{else}}
+    <div class="col-xs-12">
+        <div id="client-point-0" class="client-point-demo"></div>
+        <div id="client-point-1" class="client-point-demo"></div>
+    </div>
+
+    <div class="col-xs-12">
+        <div id="client-point-2" class="client-point-demo"></div>
+        <div id="client-point-3" class="client-point-demo"></div>
+    </div>
+    {{/if}}
+    <div id="point-curvature">{{accelerometer.z}}</div>
+
+</template>

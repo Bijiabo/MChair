@@ -22,6 +22,7 @@ Router.route "/submit","name":"postSubmit"
 
 #sensors
 Router.route "/sensors/collect", "name":"sensorCollect", "data":()->sensors.findOne()
+Router.route "/sensors/client", "name":"sensorClient", "data":()->sensors.findOne()
 
 Router.onBeforeAction "dataNotFound", "only":"postPage"
 Router.onBeforeAction requireLogin, "only":"postSubmit"

@@ -1,0 +1,33 @@
+#main{
+    margin-top: 50px;
+}
+.client-point-demo{
+    float: left;
+    width: 50%;
+    height: 200px;
+    background-color: #2ECC71;
+    opacity: 0.5;
+
+    -webkit-perspective: 1000px;
+}
+#point-curvature{
+    position: fixed;
+    top: 200px;
+    font-size: 74px;
+    width: 100%;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.imageLeft {
+    background: red;
+    width: 200px;
+    height: 200px;
+}
+
+.imageRight {
+    background: #008000;
+    width: 200px;
+    height: 200px;
+}
+

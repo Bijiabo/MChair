@@ -1,5 +1,5 @@
 <template name="header">
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
@@ -16,6 +16,9 @@
                     <li><a href="{{pathFor 'postSubmit'}}">Submit Post</a></li>
                     {{/if}}
                     <li><a href="{{pathFor 'sensorCollect'}}">Sensor Collect</a></li>
+                    <li><a href="{{pathFor 'sensorClient'}}">Sensor Client</a></li>
+                    {{#if client}}
+                    {{/if}}
                 </ui>
                 <ul class="nav navbar-nav navbar-right">
                     {{> loginButtons}}
